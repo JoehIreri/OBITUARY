@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+    
+{% block content %}
+    <div class="viewer">
+            <h2 class="subtitle">Name of All Dead People</h2>
+            <div>
+                <p>First Name:  {{object.first_name}}</p>
+                <p>Middle Name: {{object.last_name}}</p>
+                <p>Last Name: {{object.last_name}}</p>
+                <p>Date of Birth: {{object.date_of_birth}}</p>
+                <p>Date of Death: {{object.date_of_death}}</p>
+                <img src="{{object.image.url}}" alt="Image of the Dead Person">
+            </div>
+    </div>
+{% endblock %}

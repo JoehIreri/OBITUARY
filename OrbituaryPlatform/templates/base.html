@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIP</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2.5px 20px;
+        }
+        .logo{
+            color:white;
+            font-size: 20px;
+            font-style: italic;
+        }
+        .navbar{
+            display: flex;
+            list-style: none;
+            gap:50px;
+            /* background-color: red; */
+            /* width:400px */
+        }
+        .navbar li a{
+            text-decoration: none;
+            color:white;
+        }
+        .navbar li a::after{
+            content: "";
+            display: block;
+            background-color: black;
+            height:1px;
+            width:0%;
+
+        }
+        .navbar li a:hover{
+            color: black;
+            transition: ease-in-out 0.5s;
+        }
+        .navbar li a:hover::after{
+            width: 100%;
+            transition: ease-in-out 0.5s;
+
+        }
+        .subtitle{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .viewer{
+            padding:50px;
+            width:1000px;
+            margin:100px auto;
+            /* background-color: rgba(128, 128, 128, 0.651); */
+            border-radius: 10px;
+            border:black 1px solid;
+        }
+        .formCreate{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .formContainer{
+            width:400px;
+            margin:50px auto;
+        }
+        form input[type="text"]{
+            width:100%;
+            height: 30px;
+
+        }
+        form textarea{
+            height: 30px;
+            width:100%;
+        }
+        form input[type="submit"]{
+            background-color: rgb(128, 123, 128);
+            color:white;
+            border:none;
+            padding:5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 30px;
+            text-transform: uppercase;
+        }
+
+        .passContainer{
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        .homeContainer{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    {% block content %}
+        replace me
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+{%block content%}
+<div class="formContainer">
+
+    <h2>Enter name of deceased</h2>
+    <form class="formCreate" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Submit"/>
+    </form> 
+</div>
+{%endblock%}
